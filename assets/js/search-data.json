@@ -29,7 +29,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": "A PhD student doing research on the stability of renewable energy patterns throughout time. I am also a lecture lead / Mentor in Schulich Ignite 1. In my free time, I contribute to open source projects such as STUMPY2. I am a never-stop-learning person :) . Schulich Ignite is a club with a mission to inspire the next generation of programmers. &#8617; . | STUMPY is a powerful and scalable Python library for modern time series analysis &#8617; . |",
           "url": "https://nimasarajpoor.github.io/blog/about/",
           "relUrl": "/about/",
           "date": ""

@@ -4,8 +4,9 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+A PhD student doing research on the stability of renewable energy patterns throughout time. I am also a lecture lead / Mentor in **[Schulich Ignite](https://schulichignite.com/)** [^1]. In my free time, I contribute to open source projects such as **[STUMPY](https://github.com/TDAmeritrade/stumpy)**[^2]. I am a never-stop-learning person :)
 
 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[^1]: Schulich Ignite is a club with a mission to inspire the next generation of programmers.
+[^2]: STUMPY is a powerful and scalable Python library for modern time series analysis

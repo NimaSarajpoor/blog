@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: An intersection of Machine Learning, Statistics, and Programming 
-description: A meeting venue for interactive learning...
+description: Interactive Learning ...
 github_username: NimaSarajpoor
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "blog"
@@ -39,11 +39,10 @@ baseurl: "/blog" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: fastdotai
-    github: fastai
+    github: https://github.com/NimaSarajpoor
 
 # Set this to true to get LaTeX math equation support
-use_math: 
+use_math: true
 
 # Set this to true to display the summary of your blog post under your title on the Home page.
 show_description: true

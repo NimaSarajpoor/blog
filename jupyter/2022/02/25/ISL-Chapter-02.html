@@ -97,7 +97,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      20 min read
+      19 min read
     
 </span></p>
 
@@ -168,7 +168,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Note</strong>: The content of this post is from my understanding from Chapter 02 of the book <a href="https://www.statlearning.com/">Introduction to Statistical Learning</a>, where the authors discuss the basic concepts in statistical learning such as parametric vs. non-parameteric, bias vs. variance, etc. If you haven't yet read this chapter from the book, I recommend to read it first and then review it by going through this notebook. Most parts are from the book. I added additional explanation in some cases. Also, please feel free to change the code and see how the results behave. You may find something interesting...</p>
+<p><strong>Note</strong>: The content of this post is based on my understanding from Chapter 02 of the book <a href="https://www.statlearning.com/">Introduction to Statistical Learning</a>, where the authors discuss the basic concepts in statistical learning such as parametric vs. non-parameteric, bias vs. variance, etc.</p>
+<p>If you haven't read this chapter from the book, I recommend reading it first (You can find its free online version via the provided link) Please feel free to change the code and see how the results behave. You may find something interesting...</p>
 
 </div>
 </div>
@@ -312,7 +313,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can think of the first three columns as features (predictors, independent variables) and the last column as the outpute(target, dependent variable, also known as response variable). <br>
+<p>We can think of the first three columns as features (predictors, independent variables) and the last column as the output (target, dependent variable, also known as response variable). <br>
 <strong>NOTE:</strong> Since the target value is continuous, this can be considered as a regression problem. In regression, the goal is to predict a continuous variable.</p>
 
 </div>
@@ -376,8 +377,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can plot the valus of each feature vs the target and see if there is any particular relationship between them.</p>
-<p>I am going to use <code>sklearn.linear_model.LinearRegression</code> to fit the best line for each data considering only one feature at a time! Next chapter will talk about LinearRegression.</p>
+<p>We can plot the values of each feature against the target, and see if there is any particular relationship between them.</p>
+<p>I am going to use <code>sklearn.linear_model.LinearRegression</code> to fit the best line for each data considering only one feature at a time! (LinearRegression will be discussed comprehensively in the next chapter.)</p>
 
 </div>
 </div>
@@ -441,7 +442,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>In general: <code>Output Target= f(Input Variables) + Error</code>, where <code>f</code> is fixed but unknown function</strong> <br>
+<p><strong><code>Output Target= f(Input Variables) + Error</code>, where <code>f</code> is fixed but unknown function</strong> <br>
 NOTE: <code>Error</code> is considered to be independent of input, and it has mean of 0.</p>
 
 </div>
@@ -475,7 +476,7 @@ NOTE: <code>Error</code> is considered to be independent of input, and it has me
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>NOTE:</strong> Some machine learning models are considered as black box. However, if we are interested in understanding the relationship (association) between the output and the input variables (a.k.a inference), we need the exact form of <code>f</code>. Otherwise, all you can see is just <code>input-&gt;output</code>.</p>
+<p><strong>NOTE:</strong> Some machine learning models are considered as black box. However, if we are interested in understanding the relationship (association) between the output and the input variables (i.e. inference), we need the exact form of <code>f</code>. Otherwise, all you can see is just <code>input-&gt;output</code>.</p>
 <p>What kind of questions can we ask about our data?</p>
 <ul>
 <li>Which input variables (predictors) are (more) associated with the output (i.e. response variable/target)?</li>
@@ -863,9 +864,8 @@ number of classes:  2
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>before we use KNN, it might be a good idea to reduce dimension using PCA (so we can have better visualization)
-we should z-normalize before applying PCA (why? links are provided in the previous notebook).</p>
-<p>Please note that we use the whole features for fitting the model but we use its PCA-reduced version for visualization!</p>
+<p>It might be a good idea to reduce dimension using PCA (so we can have better visualization)
+Please note that we use the whole features for fitting the model but we use its PCA-reduced version for visualization!</p>
 
 </div>
 </div>
@@ -1086,7 +1086,7 @@ we should z-normalize before applying PCA (why? links are provided in the previo
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>it seems <code>k=40</code> should provide a good model as the error in test set is (close to) minimum around <code>k=40</code>. (Please note that the ups/downs are due to the fact that we split data (into train/test sets) in a particular way. We can repeat the experiment and plot expected error with different test sets.)</p>
+<p>it seems <code>k=40</code> should provide a good model as the error in test set is (close to) minimum around <code>k=40</code>.</p>
 
 </div>
 </div>
@@ -1094,7 +1094,7 @@ we should z-normalize before applying PCA (why? links are provided in the previo
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, let us plot the regions for three cases: k=1, k=40 (optimal), and k=50.</p>
+<p>Now, let us plot the regions of classes for three different cases: k=1, k=40 (optimal), and k=50.</p>
 
 </div>
 </div>
@@ -1108,7 +1108,8 @@ we should z-normalize before applying PCA (why? links are provided in the previo
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">k_values</span> <span class="o">=</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
 
-<span class="n">min_x_reduced</span><span class="p">,</span> <span class="n">max_x_reduced</span> <span class="o">=</span> <span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">17</span>
+<span class="c1">#I set the values based on the figure that shows data points with their first two PCA components...</span>
+<span class="n">min_x_reduced</span><span class="p">,</span> <span class="n">max_x_reduced</span> <span class="o">=</span> <span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">17</span> 
 <span class="n">min_y_reduced</span><span class="p">,</span> <span class="n">max_y_reduced</span> <span class="o">=</span> <span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="mi">13</span>
 
 <span class="c1">#now, we can create a meshgrid of values in PCA-ed feature (2-dim) space, and then </span>
@@ -1185,7 +1186,7 @@ we should z-normalize before applying PCA (why? links are provided in the previo
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Brain teaser:</strong><br> What does KKN learn from train set that helps it to predict test set? For instance, in linear regression mentioned earlier, we need to learn/find/calculate/estimate its parameters, and then use the fitted model (with already-estimated parameters) to predict test set. How about KNN?</p>
+<p><strong>Brain teaser:</strong> <br> What does KKN learn from train set that helps it to predict test set? For instance, in linear regression mentioned earlier, we need to estimate its parameters. In other words, the machine learns the parameter from the data. What about KNN? :)</p>
 
 </div>
 </div>
